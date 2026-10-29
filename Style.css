@@ -1,9 +1,1002 @@
-{
+
+/* ABOUT ME PORTFOLIO BUTTON */
+
+.about-portfolio-link {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.about-portfolio-button {
+    display: inline-block;
+    background-color: #6b241e;
+    color: #f5eadf;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-portfolio-button:hover {
+    background-color: #d97840;
+    color: white;
+}
+
+@charset "UTF-8";
+
+/* GENERAL WEBSITE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5eadf;
+    color: black;
+    font-family: Calibri, sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Bodoni MT", "Bodoni", Georgia, serif;
+}
+
+h2, h3, h4, p {
+    font-family: Calibri, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ABOUT ME PORTFOLIO BUTTON */
+
+.about-portfolio-link {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.about-portfolio-button {
+    display: inline-block;
+    background-color: #6b241e;
+    color: black;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-portfolio-button:hover {
+    background-color: #f5eadf;
+    color: black;
+}
+
+/* NAVIGATION */
+
+.experiment-nav {
+    background-color: #6b241e;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-family: "Bodoni MT", Georgia, serif;
+    font-size: 35px;
+    color: #f5eadf;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #f5eadf;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d97840;
+}
+
+
+/* HERO SECTION */
+
+.experiment-hero {
+    background-color: #6b241e;
+    color: #f5eadf;
+    min-height: 650px;
+    padding: 80px 8% 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.small-label {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #f5eadf;
+}
+
+.experiment-hero h1 {
+    font-size: clamp(80px, 13vw, 190px);
+    line-height: 0.85;
+    margin: 60px 0 40px;
+    letter-spacing: -5px;
+    color: #f5eadf;
+}
+
+.experiment-hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 2px #f5eadf;
+}
+
+.hero-description {
+    font-size: 21px;
+    max-width: 550px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #f5eadf;
+    color: #6b241e;
+    padding: 18px 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background-color: black;
+    color: #f5eadf;
+    transform: translateY(-5px);
+}
+
+.hero-decoration {
+    position: absolute;
+    right: 8%;
+    bottom: 40px;
+    font-size: 170px;
+    color: #f5eadf;
+    transform: rotate(-20deg);
+    animation: rotateStar 15s linear infinite;
+}
+
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* MOVING TEXT BANNER */
+
+.marquee {
+    background-color: black;
+    color: #f5eadf;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.marquee-text {
+    font-size: 26px;
+    font-weight: bold;
+    white-space: nowrap;
+    width: max-content;
+    animation: moveText 18s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-40%);
+    }
+}
+
+
+/* EXPERIMENT ONE */
+
+.experiment-one {
+    background-color: #f5eadf;
+    padding: 120px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.number {
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.experiment-heading h2 {
+    font-size: clamp(50px, 7vw, 105px);
+    line-height: 0.95;
+    margin: 30px 0;
+    color: #6b241e;
+}
+
+.experiment-heading p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.tilted-image {
+    transform: rotate(6deg);
+    border: 12px solid #6b241e;
+    transition: transform 0.4s;
+}
+
+.tilted-image img {
+    width: 100%;
+    display: block;
+}
+
+.tilted-image:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+
+/* EXPERIMENT TWO */
+
+.experiment-two {
+    background-color: black;
+    color: #f5eadf;
+    padding: 110px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.font-display h2 {
+    font-size: clamp(50px, 7vw, 100px);
+    margin: 0;
+    line-height: 1;
+}
+
+.font-display h1 {
+    font-size: clamp(85px, 11vw, 160px);
+    font-style: italic;
+    margin: 0;
+    color: #f5eadf;
+}
+
+.font-display p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.font-image img {
+    width: 100%;
+    border: 10px solid #f5eadf;
+    transform: rotate(-5deg);
+    transition: 0.4s;
+}
+
+.font-image img:hover {
+    transform: rotate(3deg) scale(1.03);
+}
+
+
+/* EXPERIMENT THREE: COLOR */
+
+.experiment-three {
+    background-color: #f5eadf;
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.experiment-three h2 {
+    font-size: clamp(45px, 7vw, 90px);
+    line-height: 1;
+    color: #6b241e;
+}
+
+.experiment-three > p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    line-height: 1.7;
+}
+
+.color-playground {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    height: 300px;
+    margin: 70px auto 30px;
+    gap: 15px;
+}
+
+.color-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+
+.color-block:hover {
+    transform: translateY(-20px) rotate(-3deg);
+}
+
+.color-block h3 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.color-block p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.cream {
+    width: 60%;
+    background-color: #f5eadf;
+    border: 3px solid #6b241e;
+    color: black;
+}
+
+.maroon {
+    width: 30%;
+    background-color: #6b241e;
+    color: #f5eadf;
+}
+
+.black {
+    width: 10%;
+    background-color: black;
+    color: #f5eadf;
+}
+
+.color-note {
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+/* EXPERIMENT FOUR: NEGATIVE SPACE */
+
+.experiment-four {
+    background-color: #6b241e;
+    color: #f5eadf;
+    padding: 120px 8%;
+}
+
+.space-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.space-text h2 {
+    font-size: clamp(65px, 9vw, 140px);
+    line-height: 0.85;
+    margin: 50px 0;
+}
+
+.space-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.space-image {
+    transform: rotate(-7deg);
+    transition: 0.4s;
+}
+
+.space-image:hover {
+    transform: rotate(0deg);
+}
+
+.space-image img {
+    width: 100%;
+    border: 12px solid #f5eadf;
+}
+
+.experiment-button {
+    display: inline-block;
+    background-color: #f5eadf;
+    color: #6b241e;
+    padding: 18px 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.experiment-button:hover {
+    background-color: black;
+    color: #f5eadf;
+}
+
+
+/* EXPERIMENT FIVE: CREATIVE COLLAGE */
+
+.experiment-five {
+    background-color: #f5eadf;
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.experiment-five h2 {
+    font-size: clamp(50px, 8vw, 115px);
+    color: #6b241e;
+    margin: 30px 0;
+}
+
+.experiment-five > p {
+    font-size: 20px;
+    max-width: 750px;
+    line-height: 1.7;
+    margin: 30px auto;
+}
+
+.creative-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.creative-collage img {
+    width: 100%;
+    display: block;
+    border: 7px solid #6b241e;
+    transition: 0.4s;
+}
+
+.collage-one {
+    transform: rotate(-8deg);
+}
+
+.collage-two {
+    transform: translateY(50px) rotate(5deg);
+}
+
+.collage-three {
+    transform: rotate(-5deg);
+}
+
+.creative-collage img:hover {
+    transform: scale(1.08);
+    box-shadow: 12px 12px 0 black;
+}
+
+
+/* FINAL SECTION */
+
+.final-section {
+    background-color: #6b241e;
+    color: #f5eadf;
+    padding: 130px 8%;
+    text-align: center;
+}
+
+.final-section > p {
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+
+.final-section h1 {
+    font-size: clamp(80px, 13vw, 180px);
+    line-height: 0.9;
+    margin: 50px 0;
+}
+
+.final-button {
+    display: inline-block;
+    background-color: #f5eadf;
+    color: #6b241e;
+    padding: 20px 45px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.final-button:hover {
+    background-color: black;
+    color: #f5eadf;
+    transform: rotate(-4deg);
+}
+
+
+/* FOOTER */
+
+.experiment-footer {
+    background-color: black;
+    color: #f5eadf;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.experiment-footer p {
+    font-size: 15px;
+    margin: 8px;
+}
+
+
+/* TABLET & PHONE RESPONSIVENESS */
+
+@media only screen and (max-width: 800px) {
+
+    .experiment-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .experiment-one,
+    .experiment-two,
+    .space-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .experiment-hero {
+        min-height: 550px;
+    }
+
+    .hero-decoration {
+        font-size: 90px;
+        right: 5%;
+    }
+
+    .creative-collage {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .color-playground {
+        height: 220px;
+    }
+
+    .color-block h3 {
+        font-size: 25px;
+    }
+
+    .color-block p {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .experiment-hero,
+    .experiment-one,
+    .experiment-two,
+    .experiment-three,
+    .experiment-four,
+    .experiment-five,
+    .final-section {
+        padding: 70px 6%;
+    }
+
+    .experiment-hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .creative-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .collage-one,
+    .collage-two,
+    .collage-three {
+        transform: none;
+    }
+
+    .color-playground {
+        height: 150px;
+        gap: 5px;
+    }
+
+    .color-block h3 {
+        font-size: 18px;
+    }
+
+    .color-block p {
+        font-size: 10px;
+    }
+
+    .space-layout {
+        gap: 40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* WEBSITE COLORS AND FONTS */
+
+body {
+    background-color: #f5eadf;
+    color: black;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Bodoni MT", "Bodoni", Georgia, serif;
+    color: black;
+}
+
+h2, h3, h4 {
+    font-family: Calibri, sans-serif;
+    color: black;
+}
+
+p {
+    font-family: Calibri, sans-serif;
+    color: black;
+}
+
+
+/* COLOR THEORY SECTION */
+
+.color-theory {
+    background-color: #f5eadf;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.color-theory h2 {
+    font-family: Calibri, sans-serif;
+    color: black;
+    font-size: 32px;
+}
+
+.color-theory p {
+    font-family: Calibri, sans-serif;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+}
+
+/* 60-30-10 COLOR EXAMPLE */
+
+.color-example {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    height: 120px;
+}
+
+.color-60 {
+    width: 60%;
+    background-color: #f5eadf;
+    color: black;
+    border: 1px solid #6b241e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-30 {
+    width: 30%;
+    background-color: #6b241e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-10 {
+    width: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+/* MY FONT PAIRING SECTION */
+
+.my-font-pairing {
+    background-color: #f5eadf;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.my-font-pairing h2 {
+    font-family: Calibri, sans-serif;
+    color: black;
+}
+
+.my-font-pairing p {
+    font-family: Calibri, sans-serif;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* FONT EXAMPLES */
+
+.font-example {
+    background-color: #6b241e;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.font-example h1 {
+    font-family: "Bodoni MT", "Bodoni", Georgia, serif;
+    font-size: 50px;
+    color: #f5eadf;
+}
+
+.font-example h2 {
+    font-family: Calibri, sans-serif;
+    font-size: 35px;
+    color: #f5eadf;
+}
+
+.font-example p {
+    font-family: Calibri, sans-serif;
+    color: #f5eadf;
+}
+
+.color-theory,
+.my-font-pairing {
+    background-color: #f9ebd8;
+}
+
+
+/* ABOUT PAGE HERO */
+
+.about-hero {
+    background-color: #6b241e;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-family: "Bodoni MT", "Bodoni", Georgia, serif;
+    color: #f5eadf;
+    font-size: 50px;
+}
+
+.about-hero h2,
+.about-hero p {
+    color: #f5eadf;
+}
+
+
+.about-image {
+    display: block;
+    margin: 0 auto 80px;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me-section {
+    background-color:  #6b241e;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.about-me-section h2 {
+    color: #f5eadf;
+    font-family: "Bodoni MT", "Bodoni";
+}
+
+.about-me-section p {
+    color: black;
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.8;
+	padding-top: 40px;
+}
+
+.about-portrait {
+    width: 230px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+/* CONTACT SECTION */
+
+/* CONTACT SECTION */
+
+.my-contact {
+    background-color: #6b241e;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+}
+
+/* HEADING */
+
+.my-contact h2 {
+    font-family: Calibri, sans-serif;
+    font-size: 48px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* PARAGRAPH */
+
+.my-contact p {
+    color: black;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* FORM */
+
+.my-contact-form {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* LABELS */
+
+.my-contact-form label {
+    display: block;
+    color: black;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* INPUT BOXES */
+
+.my-contact-form input[type="text"],
+.my-contact-form select,
+.my-contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #f5eadf;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* SUBMIT BUTTON */
+
+.my-contact-form input[type="submit"] {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 25px auto 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.my-contact-form input[type="submit"]:hover {
+    background-color: #f5eadf;
+    color: white;
+}
+
+
+
+.contact-footer {
+    background-color: #f5eadf;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-footer p {
+    color: black;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@charset"UTF-8";
+body{
 	margin-right: 15px; 
 	margin-bottom: 15px;
 }
 html {
     scroll-behavior: smooth;
+}
+.container{
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 40px;
+	
 }
 .navbar { 
 	background-color: #6b241e;
@@ -41,15 +1034,60 @@ html {
 }
 
 .nav-list a:hover {
-	background-color: #6b241e;
+    color: #6b241e;
+    background-color: #f5eadf;
 }
 	
-.choosingfonts-image img {
-	display: block;
-	margin-bottom: 80px;
-	margin-top: 50px;
+
+.about-box {
+    background-color: #6b241e;
+    color: white;
+    padding: 20px;
+	margin-top: 110px;
+	padding-bottom: 100px;
+}
+
+.about-box h1 {
+    color: white;
+	font-family: "calibri";
+}
+
+.about-box a {
+    color: white;
+	font-family: "calibri";
+}
+
+
+.portfolio-link {
+    clear: both;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.portfolio-button {
+    display: inline-block;
+    background-color: #800000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #B80000;
+    color: white;
+}
+
+
+
+
+.choosingfonts {
+	
     width: 100%;
-    height: auto;
+  margin-top: 0px;
 }
 
 
@@ -72,14 +1110,23 @@ h2 {
 }
 
 h3 { 
+	padding-top: 0px;
 	font-family: "calibri";
 	font-size: 55px
+	
+}
+h4 { 
+	padding-top: 0px;
+	font-family: "calibri";
+	font-size: 20px;
+    line-height: 1.5;
+	
 }
 
 
 p {
   font-family: "calibri";
-	font-size: 37px;
+	font-size: 22px;
     line-height: 1.5;
 }
 
@@ -126,7 +1173,7 @@ p {
             width: 45%;
 			padding-left: 0px;
 			padding-right: 40px;
-			margin-top: 0;
+			margin-top: 0px;
 			margin-bottom: 35px;
 			
         }
@@ -184,14 +1231,14 @@ p {
     width: 100%;
     height: auto;
 	display: block;
-	margin: 0;
+	margin-top: 200px;
 }
    
-.choosingfonts-image {
+.choosingfonts {
     width: 100%;
     height: auto;
     display: block;
-    margin: 70px 0 0 0;
+    margin-top: 150px;
 }
 
 .principles-image img {
@@ -272,7 +1319,7 @@ body {
  
 
 .negative-space-section p {
-    font-size: 37px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -290,6 +1337,15 @@ body {
 	padding-bottom: 30px;
 }
 
+.negativespaceimage  {
+    padding-top: 50px; 
+	width: 100%;
+	height: auto;
+	display: block;
+    margin: 0 auto;
+    flex-direction: column;
+	align-items: center;
+	}
 
 .unityprimarymethodsimage {
 	width: 100%;
@@ -318,7 +1374,7 @@ body {
 }
 
 .unity p {
-    font-size: 37px;
+    font-size: 20px;
     line-height: 1.5;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -329,7 +1385,7 @@ body {
 .creditsandcitations {
     padding-left: 80px;
     padding-right: 40px;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 
